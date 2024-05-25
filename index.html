@@ -1,15 +1,19 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-        <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/2.0.8/aframe/build/aframe-ar.js"></script>
-    </head>
-    <body>
-        <a-scene embedded arjs>
-            <a-marker preset="hiro">
-                <a-text value="Hello, AR!" color="red" position="0 0 -1" scale="1 1 1"></a-text>
-            </a-marker>
-            <a-entity camera></a-entity>
-        </a-scene>
-    </body>
-</html>
+        <html lang="ru">
+               <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+                    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+                    <title>My first AR app</title>
+               </head>
+               <body>
+                    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+                <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+            <a-scene embedded arjs>
+                    <a-marker preset="hiro">
+                        <a-text value="My first AR app" color="green" position="0 0 -1" scale="1 1 1"></a-text>
+                    </a-marker>
+                    <a-entity camera></a-entity>
+                </a-scene>
+       </body>
+        </html>
