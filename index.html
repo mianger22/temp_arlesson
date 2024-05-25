@@ -1,19 +1,15 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/2.0.8/aframe/build/aframe-ar.js"></script>
-    <script src="https://cdn.rawgit.com/mayognaise/aframe-textwrap-component/master/dist/aframe-textwrap-component.min.js"></script>
-</head>
-<body>
-    <a-scene embedded arjs>
-        <a-assets>
-            <a-mixin id="center" geometry="primitive: plane; height: auto; width: auto;" material="color: transparent;"></a-mixin>
-        </a-assets>
-        <a-marker preset="hiro">
-            <a-entity mixin="center" textwrap="align: center; color: blue; value: Hello, AR!; width: 10;"></a-entity>
-        </a-marker>
-        <a-entity camera></a-entity>
-    </a-scene>
-</body>
+    <head>
+        <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+        <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/2.0.8/aframe/build/aframe-ar.js"></script>
+    </head>
+    <body>
+        <a-scene embedded arjs>
+            <a-marker preset="hiro">
+                <a-text value="Hello, AR!" color="blue" position="0 0 -1" scale="8 8 8"></a-text>
+            </a-marker>
+            <a-entity camera></a-entity>
+        </a-scene>
+    </body>
 </html>
