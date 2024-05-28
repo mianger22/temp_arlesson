@@ -5,9 +5,9 @@
     <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/2.2.2/aframe/build/aframe-ar.js"></script>
 </head>
 <body>
-    <a-scene arjs>
+    <a-scene embedded arjs>
         <a-marker preset="custom" type="pattern" url="mark.patt">
-            <a-entity position="0 0.5 0" text="value: Hello, friend!; color: #000; align: center;"></a-entity>
+            <a-text value="My first AR app 2" color="#FFFB8F" position="-1 -1 -2.7" scale="1.5 1.5 1.5"></a-text>
         </a-marker>
 
         <a-entity camera></a-entity>
